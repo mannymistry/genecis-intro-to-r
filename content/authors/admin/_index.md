@@ -5,8 +5,8 @@ bio: This bootcamp gives a gentle introduction to R and RStudio, transforming an
 email: ""
 name: null
 organizations:
-- name: "University of Oregon"
-role: "Department of Psychology"
+- name: "56 Doors"
+role: "Data Science Training"
 social:
 - icon: r-project
   icon_pack: fab
