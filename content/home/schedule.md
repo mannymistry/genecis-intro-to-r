@@ -17,19 +17,20 @@ subtitle = ""
 [[feature]]
   icon = "terminal"
   icon_pack = "fas"
-  name = "**Getting started with R** <br><br> <i class='fa fa-calendar'></i> Monday, 9/21 <br> 9 AM - 1 PM PST "
+  name = "**Getting started with R** <br><br> <i class='fa fa-calendar'></i> Part 1 & 2 Thursday, 7/15 & 7/22 <br> 6 PM - 7 PM EST "
   description = "<br> Basics of R & RStudio <br> Data Types & Structures <br> Functions & Debugging"
+
   
 [[feature]]
   icon = "chart-bar"
   icon_pack = "fas"
-  name = "**Importing & visualizing data** <br><br> <i class='fa fa-calendar'></i> Wednesday, 9/23 <br> 9 AM - 12 PM PST"
+  name = "**Importing & visualizing data** <br><br> <i class='fa fa-calendar'></i> Part 2 & 3 Thursday, 7/29 & 8/5 <br> 6 PM - 7 PM EST"
   description = "<br> Introduction to the tidyverse <br> Importing data & Project-oriented workflows <br> Data visualization with `ggplot2`"
   
 [[feature]]
   icon = "table"
   icon_pack = "fas"
-  name = "**Data wrangling & tidying** <br><br> <i class='fa fa-calendar'></i> Friday, 9/25 <br> 9 AM - 1 PM PST"
+  name = "**Data wrangling & tidying** <br><br> <i class='fa fa-calendar'></i> Part 4 & 5 Thursday, 8/12 & 8/19 <br> 6 PM - 7 PM EST"
   description = "<br> Data wrangling with `dplyr` <br> Data tidying with `tidyr` <br> Reproducible reporting with R Markdown"
 
 +++
