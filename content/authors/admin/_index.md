@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: This bootcamp gives a gentle introduction to R and RStudio, transforming and visualizing data with the tidyverse, and the basics of R Markdown.
+bio: This course gives a gentle introduction to R and RStudio, transforming and visualizing data with the tidyverse, and the basics of R Markdown.
 email: ""
 name: null
 organizations:
