@@ -1,29 +1,35 @@
 ---
-authors:
-- brendan
-bio:
-email: ""
-name: Brendan Cullen
-organizations:
-- name: Social and Affective Neuroscience Lab
-  url: https://sanlab.uoregon.edu/
-role: Graduate Student
+bio: 
+education:
+  courses:
+  - course: RStudio Tidyverse Instructor
+    institution: RStudio
+    year: 2020
+  - course: BComm Finance and Applied IT
+    institution: University of Windsor
+    year: 2010
+email: "mandip.mistry@gmail.com"
+highlight_name: false
+interests:
+- Securities Lending
+- Systematic Trading 
+- Factor Investing
+- Investment Ops Data Science Education
+- Small Business
+
 social:
-- icon: envelope
+- icon: envelope  
   icon_pack: fas
-  link: mailto:bcullen@uoregon.edu
-- icon: globe
-  icon_pack: fas
-  link: https://bcullen.rbind.io/
+  link: /#contact
 - icon: github
   icon_pack: fab
-  link: https://github.com/brendanhcullen
-- icon: twitter
+  link: https://github.com/mannymistry
+- icon: linkedin
   icon_pack: fab
-  link: https://twitter.com/_bcullen
+  link: https://www.linkedin.com/mandipmistry
 superuser: true
-user_groups:
-- Instructor
+title: Mandip Mistry
 ---
 
-Brendan is a PhD student and NSF GRFP fellow in the [Social and Affective Neuroscience Lab](https://sanlab.uoregon.edu/) at the University of Oregon, where his work focuses on individual differences in health behavior and predictive modelling of real-world health outcomes in an effort to advance a precision medicine framework for behavioral health. He is also an [RStudio Certified Instructor](https://education.rstudio.com/trainers/people/cullen+brendan/) and loves helping new learners get up and running with R and the tidyverse.
+Mandip Mistry is a data scientist specializing in R and Python with experience helping build and maintain quantitative research tools and analysis for investment management professionals at a large Canadian pension plan. Mandip holds a Bachelors of Commerce from the University of Windsor with a major in Finance and a minor in Applied Information Technology. His passion lies in demonstrating the value add from languages like R and Python to deeply entrenched spreadsheets users and is most satisfied when he watches them remove the shackles of the dreaded Excel macro.
+
