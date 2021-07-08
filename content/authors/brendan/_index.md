@@ -29,6 +29,8 @@ social:
   link: https://www.linkedin.com/mandipmistry
 superuser: true
 title: Mandip Mistry
+user_groups:
+- Instructor
 ---
 
 Mandip Mistry is a data scientist specializing in R and Python with experience helping build and maintain quantitative research tools and analysis for investment management professionals at a large Canadian pension plan. Mandip holds a Bachelors of Commerce from the University of Windsor with a major in Finance and a minor in Applied Information Technology. His passion lies in demonstrating the value add from languages like R and Python to deeply entrenched spreadsheets users and is most satisfied when he watches them remove the shackles of the dreaded Excel macro.
