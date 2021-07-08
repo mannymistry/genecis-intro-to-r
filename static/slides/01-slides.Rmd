@@ -77,7 +77,7 @@ background-size: 900px
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ***
-Let's take a look at the IDE in RStudio Cloud... `r icon::fa("cloud")`
+Let's take a look at the IDE in RStudio Cloud... 
 
 ---
 # Basic computing
@@ -172,7 +172,7 @@ You want to use a consistent style so that others (including your future self) c
 
 --
 
-I highly recommend following the [tidyverse style guide](https://style.tidyverse.org/). We'll talk more about the tidyverse tomorrow
+I highly recommend following the [tidyverse style guide](https://style.tidyverse.org/). We'll talk more about the tidyverse in our next session
 
 --
 ***
@@ -320,7 +320,7 @@ var_2
 
 R Markdown is a magical thing. It allows you to combine R code and plain text together in the same document. 
 
-R Markdown documents end with the extension `.Rmd`. Let's take a look at how they work... `r icon::fa("cloud")`
+R Markdown documents end with the extension `.Rmd`. Let's take a look at how they work... 
 
 .center[
 ```{r echo=FALSE, out.width="70%"}
