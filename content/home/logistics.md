@@ -17,13 +17,13 @@ subtitle = "All workshop sessions will take place live via Zoom."
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "<a href='https://rstudio.cloud/spaces/94452/join?access_code=E3V8Vd%2FB%2F5edCEBphs4kuttNb6epLuRbqzab2L8J'>RStudio Cloud</a>"
+  name = "<a href='https://rstudio.cloud/spaces/151169/join?access_code=hjL7oU33148M2opDX3VeJI25DC5LqJZkkbYJuQd5'>RStudio Cloud</a>"
   description = "Where you will be working hands-on with R through interactive exercises"
   
 [[feature]]
   icon = "slack"
   icon_pack = "fab"
-  name = "<a href='https://uodatascience.slack.com/'>Slack</a>"
+  name = "<a href='https://genecisdatasc-dya2857.slack.com/'>Slack</a>"
   description = "For communicating outside of the course and asking question (use channel #general)"
   
 [[feature]]
