@@ -31,7 +31,7 @@ output:
     toc: TRUE
 ---
 
-Below is a curated list of resources I've generally found to be particularly useful and accessible. If you come across other great resources that you think you should be on this list, please [let me know](mailto:bcullen@uoregon.edu)!
+Below is a curated list of resources I've generally found to be particularly useful and accessible. If you come across other great resources that you think you should be on this list, please [
 
 ***
 
@@ -72,7 +72,8 @@ Below is a curated list of resources I've generally found to be particularly use
 
 2. [RStudio primers](https://rstudio.cloud/learn/primers) -- these, along with other tutorials, can also be run in the [Tutorial pane](https://rstudio.github.io/rstudio-extensions/rstudio-tutorials.html) in the RStudio IDE
 
-3. [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) -- more stats focused, with incredible artwork and adorable tiny giraffes `r emo::ji("giraffe")`
+3. [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) -- more stats focused, with incredible artwork and adorable tiny giraffes 
+
 :::
 
 <br>
@@ -93,23 +94,4 @@ Below is a curated list of resources I've generally found to be particularly use
 
 <br>
 
-## At University of Oregon
 
-:::uo
-
-1. 5-course [Educational Data Science Specialization](https://education.uoregon.edu/data-science-specialization-educational-leadership) offered by UO College of Education, led by [Daniel Anderson](https://education.uoregon.edu/people/faculty/daniela). See course websites [here](https://github.com/uo-datasci-specialization) and [info sheet](EDS.jpg) below. Cannot recommend highly enough! `r emo::ji("star")` `r emo::ji("star")` `r emo::ji("star")` `r emo::ji("star")` `r emo::ji("star")`
-
-2. UO Psych Data Analysis Sequence (PSY611, PSY612, PSY613), led by [Sara Weston](https://psychology.uoregon.edu/profile/sweston2/) and [Elliot Berkman](https://psychology.uoregon.edu/profile/berkman/). See course websites [here](https://github.com/uopsych) -- you will learn a TON.
-
-3. Free R workshops offered by [Data Services](https://library.uoregon.edu/data-services), a branch of UO Libraries. Includes a ["Master the Tidyverse"](https://researchguides.uoregon.edu/library_workshops/tidyverse) series.
-
-4. [SlackRs workspace](https://uodatascience.slack.com/) -- use this to ask for help from other UO community members when you're stuck on something or need some advice. 
-
-5. Each other! As grad students, one of the best resources you have access to is your peers. You can read more of my thoughts about this [here](https://bcullen.rbind.io/post/2020-03-08-data-science-training-needs-in-grad-school/). When in doubt, ask for help -- and pay it forward if/whenever you can. `r emo::ji("heart")`
-:::
-
-<br>
-
-***
-
-![](EDS.jpg)
