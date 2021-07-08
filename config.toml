@@ -5,7 +5,7 @@
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
 # Title of your site
-title = "Introduction to Genecis Biotech"
+title = "Introduction to R: Genecis Biotech"
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = "https://uopsych-r-bootcamp-2020.netlify.app/"
