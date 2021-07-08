@@ -46,58 +46,56 @@ class: split-three
 
 # Hello `r emo::ji("wave")`
 
-###  Welcome to the 3rd annual UO Psych R Bootcamp!
+###  Welcome to Introduction to R
 
 --
 
 ## <center>The team</center>
 
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+.column[
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 ```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/brendan.png")
+knitr::include_graphics("images/mandip.jpg")
 ```
+]
 
-### Brendan
-]]]
 
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/cianna.png")
-```
+### Mandip
 
-### Cianna
-]]]
-
-.column[.content[.center[
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-```{r echo = FALSE, out.width="75%"}
-knitr::include_graphics("images/cam.png")
-```
-
-### Cam
-]]]
 
 ---
 # Schedule
 
-#### `r icon::fa("calendar")`  **Day 1: Monday, 9/21, 9 AM - 1 PM PST**
+####   **Session 1: Thursday, July 15/21, 6 PM - 7 PM EST**
 + Basics of R & RStudio
 + Data Types & Structures
+
+***
+
+####   **Session 2: Thursday, July 21/21, 6 PM - 7 PM EST**
++ Q&A "R in the Wild"
 + Functions & Debugging
 
 ***
 
-#### `r icon::fa("calendar")`  **Day 2: Wednesday, 9/23, 9 AM - 12 PM PST**
+####   **Session 3: Thursday, July 29/21, 6 PM - 7 PM EST**
++ Q&A "R in the Wild"
 + Introduction to the tidyverse
 + Importing data & Project-oriented workflows
+
+
+---
+# Schedule
+
+####   **Session 4: Thursday, August 05/21, 6 PM - 7 PM EST**
++ Q&A "R in the Wild"
 + Data visualization with `ggplot2`
++ Data wrangling with `dplyr`
 
 ***
 
-#### `r icon::fa("calendar")`  **Day 3: Friday, 9/25, 9 AM - 1 PM PST**
-+ Data wrangling with `dplyr`
+####   **Session 5: Thursday, August 05/21, 6 PM - 7 PM EST**
++ Q&A "R in the Wild"
 + Data tidying with `tidyr`
 + Reproducible reporting with R Markdown
 
@@ -107,21 +105,21 @@ class: split-three
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("r-project", height = "120px")`](https://bit.ly/3caJRCN)
+# [`r fontawesome::fa("r-project", height = "120px")`](https://rstudio.cloud/spaces/151169/join?access_code=hjL7oU33148M2opDX3VeJI25DC5LqJZkkbYJuQd5)
 
 ### RStudio Cloud
 ]]]
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("slack", height = "120px")`](https://uodatascience.slack.com/)
+# [`r fontawesome::fa("slack", height = "120px")`](https://genecisdatasc-dya2857.slack.com/)
 
-### Slack <br> **#bootcamp2020**
+### Slack <br> **#general**
 ]]]
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("github", height = "120px")`](https://github.com/uopsych/summeR-bootcamp-2020)
+# [`r fontawesome::fa("github", height = "120px")`](https://github.com/mannymistry/genecis-intro-to-r)
 
 ### Github
 ]]]
@@ -334,4 +332,4 @@ class: inverse, center, middle
 
 ### You can follow along:
 
-### `r emo::ji("link")` [uopsych-r-bootcamp-2020.netlify.app](https://uopsych-r-bootcamp-2020.netlify.app/)
+### `r emo::ji("link")` [https://romantic-tesla-b2dc98.netlify.app](https://romantic-tesla-b2dc98.netlify.app)
