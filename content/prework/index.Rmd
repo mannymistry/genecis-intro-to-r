@@ -31,7 +31,7 @@ projects: []
 Hello! Welcome to Introduction to R. As we need to run this course online due to COVID-19, there are a few things we'd like you to do before we get started to make things run as smoothly as possible. 
 
 :::clock
-If possible, please try to complete this checklist *before* the first session on Monday 07/13/2021. Thank you!
+If possible, please try to complete this checklist *before* the first session on Thursday 07/15/2021. Thank you!
 :::
 
 
@@ -39,7 +39,7 @@ If possible, please try to complete this checklist *before* the first session on
 
 <br> 
 
-1) Make sure you have a [Zoom account](https://zoom.us). We will use the same Zoom link for eac session, and you will receive the link via email and slack.
+1) Make sure you have a [Zoom account](https://zoom.us). We will use the same Zoom link for each session, and you will receive the link via email and slack.
 
 2) Join the [slack workspace](https://genecisdatasc-dya2857.slack.com/). This how we will primarily be communicating with each other, and it is the best place to ask questions outside of session hours. We'll be using the channel `#general`. You should have received an email invitation to join the `genecis-datascience-training` workspace on 07/10/2021 (check your Junk/Spam inbox) -- if you haven't received an invitation, send Mandip an email at [mandip.mistry@gmail.com](mailto:mandip.mistry@gmail.com). 
 
