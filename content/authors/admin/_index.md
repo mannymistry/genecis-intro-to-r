@@ -27,7 +27,7 @@ user_groups:
 
 <br>
 
-Welcome to "Introduction to R"" hosted by [56 Doors Training and Advisory](https://56doors.com/) prepared for Genecis Biotech. If you have any questions or concerns, please contact Mandip Mistry at [mandip.mistry@gmail.com](mailto:mandip.mistry@gmail.com).
+Welcome to "Introduction to R" hosted by [56 Doors Training and Advisory](https://56doors.com/) prepared for Genecis Biotech. If you have any questions or concerns, please contact Mandip Mistry at [mandip.mistry@gmail.com](mailto:mandip.mistry@gmail.com).
 
 This website contains all of the details and materials for the course, along with resources for further learning and practice. The materials shared here are free and open source and may be shared and adpated under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/). 
 
