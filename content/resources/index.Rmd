@@ -31,7 +31,7 @@ output:
     toc: TRUE
 ---
 
-Below is a curated list of resources I've generally found to be particularly useful and accessible. If you come across other great resources that you think you should be on this list, please [
+Below is a curated list of resources I've generally found to be particularly useful and accessible. If you come across other great resources that you think you should be on this list, please do let me know.  
 
 ***
 
