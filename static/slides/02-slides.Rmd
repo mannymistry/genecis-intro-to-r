@@ -55,7 +55,7 @@ Integer | whole numbers from -Inf to +Inf | 1L, -2L
 Numeric / Double | numbers, fractions & decimals from -Inf to +Inf | 7, 0.2, -5/2, `Inf`, `-Inf`
 Character / String | quoted strings of letters, numbers, and allowed symbols| "1", "one", "o_n_e", "o-n-e", "o.n.e"
 Logical / Boolean | logical constants of True or False | `TRUE`, `FALSE`, `T`, `F`
-factor | ordered, labelled variable | variable for year in college labelled "Freshman", "Sophomore", etc.
+factor | ordered, labelled variable | variable for strain of COVID19 labeled "Lambda", "Delta", etc.
 
 ---
 # Types of data 
