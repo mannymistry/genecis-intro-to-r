@@ -150,7 +150,7 @@ x
 
 --
 ***
-Let's look at the Environment pane in RStudio... `r icon::fa("cloud")` 
+Let's look at the Environment pane in RStudio...  
 
 Since `x` is a vector, it tells us what type of vector it is and its length in addition to its contents (which can be abbreviated if the object is larger).
 
@@ -188,7 +188,7 @@ To learn how any R function works, you can access the help documentation by typi
 --
 ***
 
-Let's take a look at how `seq()` works... `r icon::fa("cloud")` 
+Let's take a look at how `seq()` works... 
 
 ```{r eval=FALSE}
 ?seq
@@ -662,9 +662,9 @@ We can create a list with the `list()` function
 --
 
 ```{r}
-brendan <- list(4L, "Brendan Cullen", TRUE)
+mandip <- list(4L, "Mandip Mistry", TRUE)
 
-brendan
+mandip
 ```
 
 ---
@@ -673,11 +673,11 @@ brendan
 And, we can give each element of the list a name to make it easier to keep track of them.
 
 ```{r}
-brendan <- list(year = 4L,
-                name = "Brendan Cullen",
+mandip <- list(year = 4L,
+                name = "Mandip Mistry",
                 enrollment = TRUE)
 
-brendan
+mandip
 ```
 
 --
@@ -693,7 +693,7 @@ You can see also see the names of a list by running `names()` on it
 --
 
 ```{r}
-names(brendan)
+names(mandip)
 ```
 
 --
@@ -709,11 +709,11 @@ Let's add another element to the list about me that contains my favorite types o
 Notice use of `c()` to create the element `fave_data` `r emo::ji("eyes")`
 
 ```{r}
-brendan <- list(year = 4L,
-                name = "Brendan Cullen",
+mandip <- list(year = 4L,
+                name = "Mandip Mistry",
                 enrollment = TRUE, 
                 fave_data = c("strings", "numbers"))
-brendan
+mandip
 ```
 
 ---
@@ -731,7 +731,7 @@ Like vectors, lists can be indexed by their name or their position (numerically)
 For example, if we wanted the `year` element, we could get it out using its position as the first element of my list:
 
 ```{r}
-brendan[1]
+mandip[1]
 ```
 ]
 
@@ -740,11 +740,11 @@ brendan[1]
 Now let's say we want to know my PhD year in dog years. Let's see if we can get that by multiplying the `year` element by 7.
 
 ```{r error=TRUE}
-brendan[1] * 7
+mandip[1] * 7
 ```
 
 ***
-R is telling us that we supplied a non-numeric argument, i.e. `brendan[1]`. 
+R is telling us that we supplied a non-numeric argument, i.e. `mandip[1]`. 
 
 This happened because single bracket indexing on a list returns a list -- but what we need is the *content* of the list.
 ]
@@ -754,7 +754,7 @@ This happened because single bracket indexing on a list returns a list -- but wh
 If we want the actual object stored at the first position instead of a list containing that object, we have to use double-bracket indexing `list[[i]]`:
 
 ```{r}
-brendan[[1]] 
+mandip[[1]] 
 ```
 
 ***
@@ -768,7 +768,7 @@ In general, a `$label` is a hint that you're looking at a list (the container) a
 Now let's see my PhD year in dog years.
 
 ```{r}
-brendan[[1]] * 7
+mandip[[1]] * 7
 ```
 ]
 ]
@@ -784,7 +784,7 @@ brendan[[1]] * 7
 The same applies to name indexing. With lists, you can get a list containing the indexed object with single brackets `[]`.
 
 ```{r}
-brendan["year"]
+mandip["year"]
 ```
 ]
 
@@ -793,7 +793,7 @@ brendan["year"]
 And double brackets `[[]]` can be used to get the *contents* -- the  object stored with that name.
 
 ```{r}
-brendan[["year"]]
+mandip[["year"]]
 ```
 ]
 
@@ -802,7 +802,7 @@ brendan[["year"]]
 You can also use `list$name` to get the object stored with a particular name too. It is equivalent to double brackets, but you don't need quotes
 
 ```{r}
-brendan$year
+mandip$year
 ```
 ]
 ]
@@ -819,8 +819,8 @@ Let's save the dog years transformation of the `year` element as `dog_years`
 
 
 ```{r}
-brendan$dog_years <- brendan$year*7
-brendan
+mandip$dog_years <- mandip$year*7
+mandip
 ```
 
 
@@ -844,11 +844,11 @@ class: solution
 .panel[.panel-name[Q1]
 ```{r}
 # Q1. (Answers will vary)
-brendan <- list(year = 6L,
-             name = "Brendan Cullen",
+mandip <- list(year = 6L,
+             name = "Mandip Mistry",
              enrollment = TRUE, 
              fave_data = c("strings", "numbers"))
-brendan
+mandip
 ```
 ]
 
@@ -856,9 +856,9 @@ brendan
 
 ```{r}
 # Q2. 
-brendan$name
+mandip$name
 
-brendan[["name"]]
+mandip[["name"]]
 ```
 
 ]
@@ -869,7 +869,7 @@ brendan[["name"]]
 
 ### Indexing objects within lists
 
-As we saw with the object `fave_data` stored in the list `brendan`, objects within lists can have different dimensions and length. 
+As we saw with the object `fave_data` stored in the list `mandip`, objects within lists can have different dimensions and length. 
 
 --
 
@@ -877,7 +877,7 @@ What if we wanted just one element of an object in a list, such as just the seco
 
 --
 
-We can use indexing on the `fave_data` vector stored within the `brendan` list by chaining indexes.
+We can use indexing on the `fave_data` vector stored within the `mandip` list by chaining indexes.
 
 --
 
@@ -887,7 +887,7 @@ We can use indexing on the `fave_data` vector stored within the `brendan` list b
 We could do that with numerical indexing...
 
 ```{r}
-brendan[[4]][2]
+mandip[[4]][2]
 ```
 ]
 
@@ -895,7 +895,7 @@ brendan[[4]][2]
 ...or with name indexing
 
 ```{r}
-brendan[["fave_data"]][2]
+mandip[["fave_data"]][2]
 ```
 ]
 
@@ -904,7 +904,7 @@ brendan[["fave_data"]][2]
 ...or with dollar sign (`$`) indexing:
 
 ```{r}
-brendan$fave_data[2]
+mandip$fave_data[2]
 ```
 ]
 ]
@@ -1139,7 +1139,7 @@ df_2
 
 ```{r}
 # Q3.
-df_2[1,] + df_2[2, ]
+# df_2[1,] + df_2[2, ]
 ```
 ]
 ]
@@ -1164,7 +1164,7 @@ Here's a quick table that summarizes data structures.
 <br>
 
 ***
-`*` We didn't talk about matrices today, but if you take PSY611, you will learn more about them in the context of the General Linear Model
+`*` We didn't talk about matrices today, you will learn more about them in the context of the General Linear Model
 
 
 ---
