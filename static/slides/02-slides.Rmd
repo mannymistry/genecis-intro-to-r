@@ -644,7 +644,7 @@ Vectors are great for storing a single type of data, but what if we have a varie
 --
 ***
 
-For example, let's say I want to store the year I am in the PhD program (a number), my name ( a string), and my enrollment status (a logical) in a single object that preserves these different types... `r emo::ji("thinking")`
+For example, let's say I want to store the number of samples (a number), from reactor 1 ( a string), and whether this reactor is still operational (a logical) in a single object that preserves these different types... `r emo::ji("thinking")`
 
 --
 
@@ -662,9 +662,9 @@ We can create a list with the `list()` function
 --
 
 ```{r}
-mandip <- list(4L, "Mandip Mistry", TRUE)
+reactor_1 <- list(1500, "Reactor1", TRUE)
 
-mandip
+reactor_1
 ```
 
 ---
@@ -673,17 +673,17 @@ mandip
 And, we can give each element of the list a name to make it easier to keep track of them.
 
 ```{r}
-mandip <- list(year = 4L,
-                name = "Mandip Mistry",
-                enrollment = TRUE)
+reactor_1 <- list(samples = 1500,
+                reactor_name = "Reactor1",
+                operational = TRUE)
 
-mandip
+reactor_1
 ```
 
 --
 ***
 
-Notice that `[[1]]`, `[[2]]`, and `[[3]]`, the element indices, have been replaced by the names `year`, `name`, and `enrollment` `r emo::ji("eyes")`
+Notice that `[[1]]`, `[[2]]`, and `[[3]]`, the element indices, have been replaced by the names `samples`, `reactor_name`, and `operational` `r emo::ji("eyes")`
 
 ---
 # Creating Lists
@@ -693,7 +693,7 @@ You can see also see the names of a list by running `names()` on it
 --
 
 ```{r}
-names(mandip)
+names(reactor_1)
 ```
 
 --
@@ -704,16 +704,16 @@ Lists are even more flexible than we've seen so far. In addition to being of het
 ---
 # Creating Lists
 
-Let's add another element to the list about me that contains my favorite types of data, which will be a vector of length 2.
+Let's add another element to the list  regarding the qualitative observations of the smelliness of the reactor 
 
-Notice use of `c()` to create the element `fave_data` `r emo::ji("eyes")`
+Notice use of `c()` to create the element `smell` `r emo::ji("eyes")`
 
 ```{r}
-mandip <- list(year = 4L,
-                name = "Mandip Mistry",
-                enrollment = TRUE, 
-                fave_data = c("strings", "numbers"))
-mandip
+reactor_1 <- list(samples = 1500,
+                reactor_name = "Reactor1",
+                operational = TRUE,
+                smell = c("sweet", "putrid"))
+reactor_1
 ```
 
 ---
@@ -731,20 +731,21 @@ Like vectors, lists can be indexed by their name or their position (numerically)
 For example, if we wanted the `year` element, we could get it out using its position as the first element of my list:
 
 ```{r}
-mandip[1]
+reactor_1[1]
 ```
 ]
 
 .panel[.panel-name[Example 2]
 
-Now let's say we want to know my PhD year in dog years. Let's see if we can get that by multiplying the `year` element by 7.
+Now let's say 30% of all samples collected can't be used. How many samples from Reactor 1 potentiall cannont be used. Let's see if we can get that by multiplying the `samples` element by 0.30.
 
 ```{r error=TRUE}
-mandip[1] * 7
+reactor_1[1] * .30
 ```
 
 ***
-R is telling us that we supplied a non-numeric argument, i.e. `mandip[1]`. 
+R is telling us that we supplied a non-numeric argument, i.e. `reactor_1`[1]`. 
+
 
 This happened because single bracket indexing on a list returns a list -- but what we need is the *content* of the list.
 ]
@@ -754,21 +755,21 @@ This happened because single bracket indexing on a list returns a list -- but wh
 If we want the actual object stored at the first position instead of a list containing that object, we have to use double-bracket indexing `list[[i]]`:
 
 ```{r}
-mandip[[1]] 
+reactor_1[[1]] 
 ```
 
 ***
-Notice it no longer has the `$year`. 
+Notice it no longer has the `$samples`. 
 
 In general, a `$label` is a hint that you're looking at a list (the container) and not just the object stored at that position (the contents). 
 
 ]
 
 .panel[.panel-name[Example 4]
-Now let's see my PhD year in dog years.
+Now let's see how many samples can't be used
 
 ```{r}
-mandip[[1]] * 7
+reactor_1[[1]] * 0.30
 ```
 ]
 ]
@@ -784,7 +785,7 @@ mandip[[1]] * 7
 The same applies to name indexing. With lists, you can get a list containing the indexed object with single brackets `[]`.
 
 ```{r}
-mandip["year"]
+reactor_1["samples"]
 ```
 ]
 
@@ -793,7 +794,7 @@ mandip["year"]
 And double brackets `[[]]` can be used to get the *contents* -- the  object stored with that name.
 
 ```{r}
-mandip[["year"]]
+reactor_1[["samples"]]
 ```
 ]
 
@@ -802,7 +803,7 @@ mandip[["year"]]
 You can also use `list$name` to get the object stored with a particular name too. It is equivalent to double brackets, but you don't need quotes
 
 ```{r}
-mandip$year
+reactor_1$samples
 ```
 ]
 ]
@@ -815,12 +816,12 @@ Just like vectors, we can change or add elements to our list using indexing.
 --
 ***
 
-Let's save the dog years transformation of the `year` element as `dog_years`
+Let's save the unused samples transformation of the `samples` element as `unusable_samples`
 
 
 ```{r}
-mandip$dog_years <- mandip$year*7
-mandip
+reactor_1$unusable_samples <- reactor_1$samples * 0.3
+reactor_1
 ```
 
 
@@ -832,7 +833,7 @@ class: inverse
 countdown(minutes = 3)
 ```
 
-1. Create a list like mine that is made up of `year`, `name`, `enrollment`, `fave_data`, but corresponds to you (year in undergrad, year in grad school, years since PhD, etc.). Make sure you enter two types of favorite data (bc who could choose?!). 
+1. Create a list made up of data from your time at Genecis `year`, `name`, `title`, `love_about_has`,`love_r` . Make sure you enter two things you love about Has! Make your list object your name (Mine will be Mandip)
 
 1. Index your list to print only your name.
 
@@ -844,10 +845,11 @@ class: solution
 .panel[.panel-name[Q1]
 ```{r}
 # Q1. (Answers will vary)
-mandip <- list(year = 6L,
+mandip <- list(year = 2021,
              name = "Mandip Mistry",
-             enrollment = TRUE, 
-             fave_data = c("strings", "numbers"))
+             title = "R Trainer", 
+             love_about_has = c("funny", "loves a cuppa"), 
+             love_r = TRUE)
 mandip
 ```
 ]
@@ -869,15 +871,15 @@ mandip[["name"]]
 
 ### Indexing objects within lists
 
-As we saw with the object `fave_data` stored in the list `mandip`, objects within lists can have different dimensions and length. 
+As we saw with the object `smell` stored in the list `reactor_1``, objects within lists can have different dimensions and length. 
 
 --
 
-What if we wanted just one element of an object in a list, such as just the second element of `fave_data`? 
+What if we wanted just one element of an object in a list, such as just the second element of `smell`? 
 
 --
 
-We can use indexing on the `fave_data` vector stored within the `mandip` list by chaining indexes.
+We can use indexing on the `smell` vector stored within the `reactor`` list by chaining indexes.
 
 --
 
@@ -887,7 +889,7 @@ We can use indexing on the `fave_data` vector stored within the `mandip` list by
 We could do that with numerical indexing...
 
 ```{r}
-mandip[[4]][2]
+reactor_1[[4]][2]
 ```
 ]
 
@@ -895,7 +897,7 @@ mandip[[4]][2]
 ...or with name indexing
 
 ```{r}
-mandip[["fave_data"]][2]
+reactor_1[["smell"]][2]
 ```
 ]
 
@@ -904,7 +906,7 @@ mandip[["fave_data"]][2]
 ...or with dollar sign (`$`) indexing:
 
 ```{r}
-mandip$fave_data[2]
+reactor_1$smell[2]
 ```
 ]
 ]
