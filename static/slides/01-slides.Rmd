@@ -107,11 +107,10 @@ Let's take a look at the IDE in RStudio Cloud...
 # Roots
 4^(1/2)
 ```
-
 --
 ***
 
-Thankfully, R follows the order of operations (PEMDAS).
+Thankfully, R follows the order of operations (PEMDAS or BEDMAS).
 
 ```{r}
 2^3 + 4 * 1/2
