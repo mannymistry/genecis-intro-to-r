@@ -871,7 +871,7 @@ mandip[["name"]]
 
 ### Indexing objects within lists
 
-As we saw with the object `smell` stored in the list `reactor_1``, objects within lists can have different dimensions and length. 
+As we saw with the object `smell` stored in the list `reactor_1`, objects within lists can have different dimensions and length. 
 
 --
 
@@ -879,7 +879,7 @@ What if we wanted just one element of an object in a list, such as just the seco
 
 --
 
-We can use indexing on the `smell` vector stored within the `reactor`` list by chaining indexes.
+We can use indexing on the `smell` vector stored within the `reactor` list by chaining indexes.
 
 --
 
@@ -926,9 +926,9 @@ A data frame is technically a special kind of list -- it can contain different k
 We can create a data frame very similarly to how we made a list, but replacing `list()` with `data.frame()`.
 
 ```{r}
-df_1 <- data.frame(c1 = c(1, 3),
-                   c2 = c(2, 4), 
-                   c3 = c("a", "b"))
+df_1 <- data.frame(time_point = c(1, 7),
+                   mw = c(286,510), 
+                   run = c("run1", "run1"))
 
 df_1
 ```
@@ -975,7 +975,7 @@ df_1[, 2]
 We can also index by name
 
 ```{r}
-df_1[, "c2"]
+df_1[, "mw"]
 ```
 ]
 ]
@@ -1000,7 +1000,7 @@ As with lists, we can use the `$` operator in the form `dataframe$column_name` (
 Let's get the first column
 
 ```{r}
-df_1$c1
+df_1$time_point
 ```
 ]
 
@@ -1011,7 +1011,7 @@ We can also index a column using vector indexing, since a single column is just 
 Let's get the first value in column 1.
 
 ```{r}
-df_1$c1[1]
+df_1$time_point[1]
 ```
 ]
 ]
@@ -1037,17 +1037,17 @@ Just like lists and vectors, you can modify a data frame and add new elements or
 We could create `c4` as the sum of `c1` and `c2`:
 
 ```{r}
-df_1$c4 <- df_1$c1 + df_1$c2
+df_1$magic_recipe <- df_1$time_point + df_1$mw
 
 df_1
 ```
 ]
 
 .panel[.panel-name[Example 2]
-Or we could replace an element using indexing too. Let's replace `c1` with `c1^2`:
+Or we could replace an element using indexing too. Let's replace `time_point` with `time_point^2`:
 
 ```{r}
-df_1$c1 <-  df_1$c1^2
+df_1$time_point <-  df_1$time_point^2
 
 df_1
 ```
@@ -1085,7 +1085,7 @@ We can also coerce individual columns into other types.
 For example, we could convert column `c1` into an integer (from a numeric/double)
 
 ```{r}
-df_1$c1 <- as.integer(df_1$c1)
+df_1$time_point <- as.integer(df_1$time_point)
 
 str(df_1)
 ```
